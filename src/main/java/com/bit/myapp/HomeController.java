@@ -37,7 +37,7 @@ public class HomeController {
 	 *  
 	 */
 	
-	@RequestMapping(value = "/home", method = RequestMethod.GET)
+	@RequestMapping(value = "/home", method = RequestMethod.GET)  // value 는 url 위치를 결정해준다.
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
