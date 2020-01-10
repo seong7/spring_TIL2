@@ -73,7 +73,7 @@ public class MemberController {
 		return "member/join";
 	}
 	
-	//member/student/aaa/9123033   : "studentID?="  / "num?=" 표시 안하는 방법  ***********
+	//member/student/aaa/9123033   : "?studentID="  / "?num=" 표시 안하는 방법  ***********
 	@RequestMapping(value = "member/student/{studentId}/{num}")
 	public String student(@PathVariable String studentId,
 			@PathVariable int num, Model model) {
